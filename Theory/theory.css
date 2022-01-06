@@ -1,0 +1,177 @@
+.heading {
+    position: relative;
+    padding: 8%;
+    text-align: center;
+    background:rgb(172, 176, 153);
+    color:black; /*Makes the contents of the division black*/
+}
+.textheading {
+    position: relative;
+    top: 35%;
+    font-weight: bolder;
+    font-size: 5vw;
+}
+.container {
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height:90vw;
+    width: 100%;
+}
+.card {
+    position: absolute;
+    border: 2px solid black;
+    display: grid; 
+    align-content: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 25vw;
+    width: 20vw;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);/*shadow depth on 4 sides and the color of shadow*/
+    transition: 0.3s; /*Time for the box-shadow effect*/ 
+}
+.card:hover{
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.8);
+}
+.button {
+    position: relative;
+    top: 7.5vw;
+    height: 5vw;
+    width: 10vw;
+    font-size: 2vw;
+    padding: 5%; 
+    background-color: rgb(24, 207, 49);
+    border: none;
+    border-radius: 1vw;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.7);
+}
+.button:hover{
+    transition-duration: 0.2s;
+    filter: brightness(120%);/*give the glowing effect*/
+    color: white;
+    height: 5.2vw;
+    width: 10.2vw;
+    font-size: 2.2vw;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,1);
+}
+.button:active{
+    transition-duration: 0.1s;
+    transform: translate(0,0.2rem);/*moves the button in y-direction giving the pressing effect*/
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,1.2);
+}
+#card1 {
+    left: 23%;   
+    background: url("./Assets/dbms.png") no-repeat;
+    background-size: 100%;
+}
+
+#card2 {
+    left: 53%;
+    background: url("./Assets/cn.jpg") no-repeat;
+    background-size: 101%;
+}
+#card3 {
+    top: 30vw;
+    left: 23%;
+    background: url("./Assets/oss.jpg") no-repeat;
+    background-size: 169%;
+    background-position-x: -12.5vw;
+}
+#card4 {
+    top: 30vw;
+    left: 53%;
+    background: url("./Assets/CA.jpg") no-repeat;
+    background-size: 102%;
+    background-position: -0.1vw -4vw ;
+}
+#card5 {
+    top: 60vw;
+    left: 23%;
+    background: url("./Assets/Dm.jpg") no-repeat;
+    background-size: 100%;
+}
+
+#card6 {
+    top: 60vw;
+    left: 53%;
+    background: url("./Assets/se.jpeg") no-repeat;
+    background-size: 101%;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background:#f1f1f1;/*area below the scrallbar*/
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px grey;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(172, 176, 153);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(145, 148, 130);;
+}
+#back {
+    display: block;
+    position: absolute;
+    top:1vw;
+    left: 1vw;
+    height: 2.5vw;
+    width: 2.5vw;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    cursor: pointer; 
+    background:url("./Assets/back.jpg") no-repeat;
+    background-size: 100%;
+    box-shadow: 0 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.55);
+}
+
+#back:hover{
+    transition-duration: 0.2s;
+    filter: brightness(117%);
+    height: 2.7vw;
+    width: 2.7vw;
+    box-shadow: 0 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.68);
+}
+#back:active{
+    transition-duration: 0.1s;
+    transform: translate(0,0.1rem);
+    box-shadow: 0 0.5vw 0.5vw 0 rgba(0, 0, 0, 0.72);
+}
+#scrlbck{
+    display: none;/*Hidden by default*/
+    position: fixed;/*fixed/sticky positon*/
+    bottom: 20px;/*place the button at the bottom of the page*/
+    right: 30px;/*place the button 30px from the right*/
+    z-index: 99;/*Make sure it does not operlap*/
+    width: 3vw;
+    height: 3vw;
+    border: none;
+    outline: none;
+    background:url("./Assets/scrollback.png") no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    border-radius: 100%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,1);
+}
+#scrlbck:hover{
+    transition-duration: 0.2s;
+    filter: brightness(150%);
+    width: 3.2vw;
+    height: 3.2vw;
+    box-shadow: 0 5.5px 8.5px 0 rgba(0,0,0,1.2);   
+}
+
+#scrlbck:active{
+    transition-duration: 0.1s;
+    transform: translate(0,0.2rem);
+    box-shadow: 0 6px 9px 0 rgba(0,0,0,1.5);
+}
